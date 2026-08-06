@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management</title>
+</head>
+<body>
+
+    <h1>Employee Management System</h1>
+
+    <form method="POST" action="/add_employee">
+        <input
+            type="text"
+            name="employee_name"
+            placeholder="Employee Name"
+            required
+        >
+
+        <button type="submit">
+            Add Employee
+        </button>
+    </form>
+
+    <h2>Employees</h2>
+
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee[0] }} - {{ employee[1] }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
