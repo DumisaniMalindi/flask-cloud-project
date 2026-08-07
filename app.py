@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 def get_connection():
     return psycopg2.connect(
-        host=os.getenv("DB_HOST", "db"),
+        host=os.getenv("DB_HOST", "localhost"),
         database=os.getenv("DB_NAME", "employee"),
         user=os.getenv("DB_USER", "postgres"),
         password=os.getenv("DB_PASSWORD", "password")
@@ -39,7 +39,9 @@ def home():
     cur.execute("""
     CREATE TABLE IF NOT EXISTS employees (
         id SERIAL PRIMARY KEY,
-        name VARCHAR(100)
+        employee_id VARCHAR(100) UNIQUE,
+        name VARCHAR(100),
+        department VARCHAR(100)
     )
     """)
 
