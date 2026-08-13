@@ -17,4 +17,4 @@ docker run --name postgres-db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=pas
 
 docker run -p 5000:5000 -e DB_HOST=host.docker.internal -e DB_NAME=employee -e DB_USER=postgres -e DB_PASSWORD=password dumisanimalindi/employee-app:v3
 
-Week 3 CI/CD test
+Week 3 CI/CD testingg
