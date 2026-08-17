@@ -6,10 +6,10 @@ This project demonstrates the design, deployment, automation, monitoring, and se
 
 The project was completed across four phases:
 
-- Week 1: Application Development & Containerization
-- Week 2: Infrastructure as Code (Terraform)
-- Week 3: CI/CD Automation
-- Week 4: Monitoring, Scaling & Security
+Week 1: Application Development & Containerization
+Week 2: Infrastructure as Code (Terraform)
+Week 3: CI/CD Automation
+Week 4: Monitoring, Scaling & Security
 
 ---
 
@@ -29,11 +29,11 @@ Amazon RDS PostgreSQL
 
 Inside VPC:
 
-- Public Subnet 1
-- Public Subnet 2
+Public Subnet 1
+Public Subnet 2
 
-- Private Subnet 1
-- Private Subnet 2
+Private Subnet 1
+Private Subnet 2
 
 ---
 
